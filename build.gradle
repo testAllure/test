@@ -1,0 +1,19 @@
+group 'Test'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+
+repositories {
+    mavenCentral()
+}
+
+
+sourceSets {
+    main.java.srcDir("src/source/java")
+    test.java.srcDir("src/test/java")
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
